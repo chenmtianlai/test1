@@ -25,8 +25,8 @@ let package = Package(
         .target(
             name: "RTMModel",
             dependencies: [
-//                .product(name: "AgoraRTM", package: "AgoraRtm_Apple"),
-//                .product(name: "RtcBasic", package: "AgoraRtcEngine_iOS"),
+                .product(name: "AgoraRTM", package: "AgoraRtm_Apple"),
+                .product(name: "RtcBasic", package: "AgoraRtcEngine_iOS"),
             ]
         )
     ],
