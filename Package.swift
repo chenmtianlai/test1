@@ -16,9 +16,9 @@ let package = Package(
             targets: ["RTMModel"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/AgoraIO/AgoraRtm_Apple.git", branch: "2.2.5_lite"),
-        .package(url: "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git", .exact("4.6.0")),
-//        .package(url: "https://github.com/AgoraIO/AgoraRtm_Apple.git", .upToNextMajor(from: "2.2.4")),
+//        .package(url: "https://github.com/AgoraIO/AgoraRtm_Apple.git", branch: "2.2.5_lite"),
+//        .package(url: "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git", .exact("4.6.0")),
+        .package(url: "https://github.com/AgoraIO/AgoraRtm_Apple.git", .upToNextMajor(from: "2.2.4")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -26,8 +26,8 @@ let package = Package(
         .target(
             name: "RTMModel",
             dependencies: [
-//                .product(name: "AgoraRTM", package: "AgoraRtm_Apple"),
-                .product(name: "RtcBasic", package: "AgoraRtcEngine_iOS"),
+                .product(name: "AgoraRTM", package: "AgoraRtm_Apple"),
+//                .product(name: "RtcBasic", package: "AgoraRtcEngine_iOS"),
             ]
         )
     ],
